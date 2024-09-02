@@ -1,0 +1,109 @@
+.container {
+      background: conic-gradient(from 0deg at 50% 50%, #760089 0deg, #000000 360deg);
+      height: 100%;
+      color: white;
+
+      .title {
+            margin: 25px 67px;
+
+            h1 {
+                  display: flex;
+                  flex-direction: column;
+                  font-size: 6rem;
+            }
+      }
+
+      .para {
+            margin: 25px 67px;
+            text-align: justify;
+            max-width: 668px;
+            font-size: 1.6rem;
+      }
+      button {
+            margin: 25px 67px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            width: 283px;
+            height: 62.05px;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+            background: conic-gradient(from 90deg at 50% 50%, #FFFFFF 0deg, #666666 360deg);
+            border-radius: 18px;
+            animation: rotate 12s linear infinite;
+            
+            span{
+                  border-radius: 18px;
+                  background: #D9D9D9;
+                  padding: 14px 64px;
+            }
+      }
+        
+}
+@media(max-width: 500px){
+      .container{
+
+            .title {
+                  margin: 0;
+                  text-align: center;
+
+                  h1 {
+                        font-size: 3rem !important;
+                  }
+            }
+      }
+}
+@media(max-width: 800px){
+      .container{
+
+            .para{
+                  font-size: 1.1rem;
+            }
+
+            button {
+                  margin: 20px 67px;
+                  font-size: 1.1rem;
+                  font-weight: 800;
+                  width: 203px;
+                  height: 62.05px;
+                  background-color: #fff;
+                  border: none;
+                  cursor: pointer;
+                  background: conic-gradient(from 90deg at 50% 50%, #FFFFFF 0deg, #666666 360deg);
+                  border-radius: 18px;
+                  animation: rotate 14s linear infinite;
+                  
+                  span{
+                        border-radius: 18px;
+                        background: #D9D9D9;
+                        padding: 14px 30px;
+                  }
+            }
+
+            .title {
+                  h1 {
+                        font-size: 4rem;
+                  }
+            }
+      }
+}
+
+
+@keyframes rotate {
+      0% {
+            background: conic-gradient(from 0deg at 50% 50%, #FFFFFF 0deg, #666666 360deg);
+      }
+      25% {
+            background: conic-gradient(from 90deg at 50% 50%, #FFFFFF 0deg, #666666 360deg);
+      }
+      50% {
+            background: conic-gradient(from 180deg at 50% 50%, #FFFFFF 0deg, #666666 360deg);
+      }
+      75% {
+            background: conic-gradient(from 270deg at 50% 50%, #FFFFFF 0deg, #666666 360deg);
+      }
+      100%{
+            background: conic-gradient(from 360deg at 50% 50%, #FFFFFF 0deg, #666666 360deg)
+      }
+  }
+

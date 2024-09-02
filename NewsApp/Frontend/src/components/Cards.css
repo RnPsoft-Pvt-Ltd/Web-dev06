@@ -1,0 +1,136 @@
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container-Cards {
+    max-width: 300px;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 12px;
+    box-shadow: 0px 0px 12px rgb(203, 202, 202);
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card {
+    border-radius: 12px;
+    width: 290px;
+    height: auto;
+    box-shadow: 0 0 0 0px rgb(180, 179, 179);
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #faf9f9;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 20px;
+    margin: 10px -20px;
+
+    .list-group {
+        list-style-type: none;
+    }
+}
+
+.card-header {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+}
+.card-header:hover{
+    img{
+        transform: scale(1.2);
+    }
+}
+
+#location {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#black-line {
+    background-color: black;
+    height: 3px;
+    border: none;
+}
+
+.news-title {
+    color: black;
+    font-weight: bold;
+}
+
+.news-source {
+    font-size: 12px;
+    margin-block: 12px;
+}
+
+.news-desc {
+    font-size: 13px;
+    color: #676565;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.media-text {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.list-group {
+
+    .media {
+        display: flex;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+
+        .media-body {
+            p {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: normal;
+                margin-left: 20px;
+                font-weight: 600;
+                color: #232323;
+            }
+
+            .media-date {
+                margin-top: -10px;
+                font-size: 10px;
+                color: #575757;
+            }
+        }
+
+        img {
+            width: 80px;
+            height: 60px;
+            margin: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    .media:hover{
+        img{
+            transform: scale(1.2);
+        }
+    }
+}
