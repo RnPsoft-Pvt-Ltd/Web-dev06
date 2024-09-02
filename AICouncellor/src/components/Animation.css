@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+}
+
+.containerAni {
+      height: 100vh;
+      background-image: url("./Images/BAckground.png");
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+
+      .back {
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+      }
+
+
+      #C {
+            height: 200px;
+            transform: rotate(180deg);
+            position: absolute;
+            top: 0px;
+            right: 20px;
+            padding: 300px 10px;
+      }
+
+      .text {
+            position: relative;
+            margin-top: 50px;
+      }
+
+      h5 {
+            position: absolute;
+            right: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4.44vw;
+            font-weight: 700;
+            line-height: 103.9px;
+            color: #FFFFFF;
+      }
+
+      h6 {
+            font-family: 'Cairo', sans-serif;
+            margin-top: -25px;
+            font-size: 10.215vw;
+            font-weight: 700;
+            line-height: 367.59px;
+            background: linear-gradient(180deg, #DB00FF 0%, #9747FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+      }
+
+      #btn {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            border: 2px solid #FFFFFF;
+            color: white;
+            background: #7B008F;
+            width: 137.88px;
+            height: 50.8px;
+            border-radius: 63px;
+            cursor: pointer;
+      }
+}
+
+@media (max-width: 1300px) {
+      #h6 {
+            margin-top: -60px;
+      }
+
+      #C {
+            height: 150px !important;
+            right: 20px !important;
+            top: -40px !important;
+      }
+
+}
+
+@media (max-width: 680px) {
+      #h6 {
+            margin-top: -90px;
+      }
+
+      #C {
+            height: 120px !important;
+            right: 20px !important;
+      }
+
+      #btn {
+            width: 107.88px !important;
+            height: 40.8px !important;
+      }
+}
+
+@media (max-width: 460px) {
+      #h6 {
+            margin-top: -100px;
+      }
+
+      #C {
+            height: 80px !important;
+            right: 20px !important;
+            top: -10px !important;
+      }
+}

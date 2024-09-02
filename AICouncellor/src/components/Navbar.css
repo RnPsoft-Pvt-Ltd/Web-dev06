@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    position: sticky;
+    top: 0;
+    font-family: "Poppins", sans-serif;
+    background: rgba(2, 7, 21);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 80px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white; /* Changed to black for better contrast */
+  }
+  nav a:hover{
+    background-color: rgb(55, 61, 79);;
+  }
+  nav li:first-child{
+    margin-right: auto;
+    transition: 1s;
+  }
+  nav li:first-child:hover{
+    a{
+        background-color: rgba(2, 7, 21);
+    }
+    img{
+        transform: scale(1.1);
+        transition: 1s ease-in-out;
+    }
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    width: 250px;
+    background: rgba(2, 7, 21, 0.9);
+    color: white;
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar.visible{
+    display: flex;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+
+  .contactUsBtn{
+    background: linear-gradient(94.33deg, #4050F2 0%, #451DB8 100%);
+    width: 100.88px;
+    height: 50.8px;  
+    border-radius: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14.44px;
+    margin-left: 9vw;
+    margin-right: 20px;
+  }
+
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+      img{
+        height: 30px;
+      }
+    }
+    .contactUsBtn{
+        max-width: 100px;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+    .contactUsBtn{
+        max-width: 100px;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+  }
+  

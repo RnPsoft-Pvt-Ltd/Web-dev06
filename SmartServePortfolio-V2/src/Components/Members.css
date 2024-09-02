@@ -1,0 +1,230 @@
+.container {
+      margin: 0px 20px;
+      width: 100%;
+
+      .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                  font-size: 32px;
+                  font-weight: 700;
+            }
+
+            button {
+                  width: 44px;
+                  height: 44px;
+                  border-radius: 12px;
+                  border: none;
+                  background-color: white;
+                  color: #adacac;
+                  cursor: pointer;
+            }
+      }
+
+      #para {
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: -10px;
+            color: rgb(118, 117, 117);
+      }
+
+      .innerBox {
+            background-color: white;
+            padding: 10px 25px;
+
+            .date {
+                  line-height: 8px;
+
+                  h1 {
+                        font-size: 20px;
+                        font-weight: 700;
+
+                        span {
+                              color: #766BF6;
+                        }
+                  }
+            }
+
+            .twobox {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 40px;
+
+                  .box {
+                        margin: 25px 0px;
+                        width: 100%;
+                        padding: 0 20px;
+                        line-height: 15px;
+                        border: 2.02px solid #EBEBEB;
+                        border-radius: 12px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h3 {
+                              color: rgb(78, 77, 77);
+                        }
+
+                        #logo1 {
+                              background: #fcebc4;
+                              color: #FEC53D;
+                              padding: 5px 8px;
+                              border-radius: 12px;
+                        }
+
+                        #logo2 {
+                              background: #c0f3d9;
+                              color: #32de88;
+                              padding: 5px 8px;
+                              border-radius: 12px;
+                        }
+                  }
+            }
+
+            .inputs {
+
+                  div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        
+
+                        input {
+                              width: 416px;
+                              height: 43px;
+                              border-radius: 7px;
+                              border: 1px solid #D8D8D8;
+                              padding: 0 20px;
+                        }
+
+                        button {
+                              height: 43px;
+                              width: 125px;
+                              background: #877EF7;
+                              color: white;
+                              border: none;
+                              border-radius: 7px;
+                              cursor: pointer;
+                        }
+                  }
+
+                  p {
+                        margin-top: 5px;
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                        color: rgb(117, 115, 115);
+                        font-size: 10px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                  }
+            }
+
+            .mainBox {
+
+                  .innermainBox {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h1 {
+                              font-size: 24px;
+                              font-weight: 700;
+                        }
+
+                        select {
+                              height: 28px;
+                              width: 106px;
+                              color: rgb(141, 137, 137);
+                              border-radius: 7px;
+                              padding: 0px 10px;
+                        }
+                  }
+
+                  table {
+                        width: 100%;
+                        text-align: center;
+                        overflow-x: scroll;
+
+                        thead {
+                              background: #F1F0FE;
+                              height: 48px;
+                              border-radius: 20px;
+                              width: 100px;
+                        }
+
+                        tbody {
+                              tr {
+                                    height: 58px;
+
+                                    button {
+                                          width: 94px;
+                                          height: 27px;
+                                          border: none;
+                                          border-radius: 23px;
+                                          padding: 0 10px;
+                                          background: #00B69B;
+                                          color: white;
+                                    }
+                              }
+
+                              #name {
+                                    display: flex;
+                                    gap: 20px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding-top: 15px;
+                              }
+                        }
+                  }
+            }
+      }
+
+      
+}
+
+@media(max-width: 990px) {
+      .inputs {
+            div {
+                  input {
+                        width: 180px !important;
+                  }
+                  
+            }
+      }
+
+      .twobox{
+            flex-direction: column;
+      }
+
+      .mainBox{
+            table{
+                  overflow-x:hidden;
+
+                  td,th{
+                        width: 100px !important;
+                  }
+            }
+      }
+}
+@media(max-width: 650px) {
+      .inputs {
+            div {
+                  justify-content: center;
+                  align-items: center;
+                  input {
+                        width: 180px !important;
+                  }
+                  
+            }
+      }
+      .innermainBox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+      }
+
+}

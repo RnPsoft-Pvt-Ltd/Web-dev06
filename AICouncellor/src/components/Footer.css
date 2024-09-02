@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.footer {
+    font-family: "Manrope", sans-serif;
+    background-color: #0F0F0F;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px; /* To limit the width of each section */
+  }
+
+  .footer-left a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .footer-logo {
+    max-width: 100%; /* Ensures the logo is responsive */
+    margin-bottom: 10px;
+  }
+  
+  .footer-left p, .footer-left a {
+    margin: 5px 0;
+  }
+  
+  .footer-center h3, .footer-right h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-center ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-center ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-right .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-right .social-icons a img {
+    width: 20px; /* Adjust size as necessary */
+    height: 20px; /* Adjust size as necessary */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-left, .footer-center, .footer-right {
+      text-align: center;
+    }
+  }
+  

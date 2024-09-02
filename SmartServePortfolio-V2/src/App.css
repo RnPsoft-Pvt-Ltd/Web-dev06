@@ -1,0 +1,14 @@
+
+
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 0px 20px;
+  background-color: #f8f8f8;
+}
+
+
+

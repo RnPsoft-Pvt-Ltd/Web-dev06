@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.main-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+.cus-satisfaction{
+    animation-name: cus-satisfaction;
+    animation-duration: 1.5s;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .main-header{
+        font-size: 5vw;
+        font-weight: 800;
+        line-height: 6.47vw;
+        text-align: center;
+        margin-bottom: 0px;
+    } 
+    
+    .feature-texts{
+        width: 40vw;
+        height: 10vw;
+        /* top: 405px;
+        left: 371.5px; */
+        gap: 0px;
+        opacity: 0px;
+        font-size: 1.5vw;
+        font-weight: 600;
+        line-height: 2vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: rgba(52, 52, 52, 1);
+    }   
+    .getStarted-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 13vw;
+        height: 3.5vw;
+        gap: 0px;
+        border-radius: 1vw;
+        border: 0px;
+        opacity: 0px;
+        background: rgba(65, 71, 232, 1);
+        font-size: 1vw;
+        font-weight: 700;
+        line-height: 26.09px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: white;
+    }
+}
+
+.featuresProvided{
+    /* margin-top: 70px; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 629px;
+    width: 1444px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.call-img{
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    /* overflow: hidden; */
+    margin-bottom: 100px;
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23%;
+    width: 14%;
+    position: absolute;
+    /* padding: 10px; */
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 18%;
+  }
+  
+  /* Positions for the boxes */
+  .real-time-analytics {
+    animation-name: real-time;
+    animation-duration: 2s;
+    top: -5%;
+    left: 13%;
+    background: #27B5FF;
+
+  }
+  
+  .multi-language-support {
+    animation-name: multi-language;
+    animation-duration: 2s;
+    top: -10%;
+    right: 38%;
+    background: #F95178;
+  }
+  
+  .system-integration {
+    animation-name: system-integration;
+    animation-duration: 2s;
+    top: 18%;
+    right: 12%;
+    background: #EA9B7A;
+  }
+  
+  .call-reception {
+    animation-name: call-reception;
+    animation-duration: 2s;
+    bottom: 30%;
+    left: 15%;
+    background: #5278FF;
+
+  }
+  
+  .detailed-reporting {
+    animation-name: detailed-reporting;
+    animation-duration: 2s;
+    bottom: 10%;
+    right: 15%;
+    background: #FF9900;
+
+  }
+  
+  .scalability {
+    animation-name: scalability;
+    animation-duration: 2s;
+    bottom: -13%;
+    left: 43%;
+    background: #8F4A8F;
+  }
+
+  @keyframes cus-satisfaction{
+    0%{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0vh);
+    }
+  }
+
+  @keyframes real-time{
+    0%{
+        top: -63%;
+        left: -50%;
+        transform: rotate(-30deg);
+    }
+    50%{
+        top: -63%;
+    left: -2%;
+    transform: rotate(-30deg);
+    }
+    100%{
+        top: -5%;
+        left: 13%;
+        transform: rotate(0deg); 
+    }
+}
+
+@keyframes multi-language{
+    0%{
+        transform: rotate(-15deg);
+        top: -75%;
+        right: -50%;
+    }
+    50%{
+        top: -75%;
+    right: -12%;
+        transform: rotate(-15deg);
+    }
+    100%{
+        top: -10%;
+        right: 38%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes system-integration {
+    0%{
+        top: -33%;
+        right: -50%;
+    }
+    50%{
+        top: -33%;
+        right: -12%;
+    }
+    100%{
+        transform: rotate(0deg);
+        top: 18%;
+        right: 12%;
+    }
+}
+
+@keyframes call-reception{
+    0%{
+        transform: rotate(30deg);
+        bottom: 81%;
+        left: -50%;
+    }
+    50%{
+        transform: rotate(30deg);
+        bottom: 81%;
+        left: -17%;
+    }
+    100%{
+        bottom: 30%;
+        left: 15%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes scalability{
+    0%{
+        transform: rotate(30deg);
+        bottom: 92%;
+        left: 200%;
+    }
+    50%{
+        bottom: 92%;
+        transform: rotate(30deg);
+        left: 79%;
+    }
+    100%{
+        bottom: -13%;
+        left: 43%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes detailed-reporting{
+    0%{
+        bottom: 87%;
+        transform: rotate(-30deg);
+        right: 200%;
+    }
+    50%{
+        bottom: 87%;
+        right: 82%;
+        transform: rotate(-30deg);
+    }
+    100%{
+        bottom: 10%;
+        right: 15%;
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .box {
+      font-size: 12px;
+      padding: 8px;
+    }
+    .container {
+      max-width: 600px; /* Adjust as needed */
+    }
+
+    .main-image{
+        width: 350px;
+    }
+
+    .real-time-analytics {
+        top: -5%;
+        left: 13%;    
+      }
+      
+      .multi-language-support {
+        top: -14%;
+        right: 33%;
+      }
+      
+      .system-integration {
+        top: 18%;
+        right: 3%;
+      }
+      
+      .call-reception {
+        bottom: 25%;
+        left: 02%;
+      }
+      
+      .detailed-reporting {
+        bottom: 12%;
+        right: 7.5%;
+      }
+      
+      .scalability {
+        bottom: -20%;
+        left: 43%;
+      }
+
+      .cus-satisfaction .feature-texts {
+        font-size: 3.5vw; /* Increase the font size for smaller screens */
+        line-height: 4vw;
+        width: 50vw;
+        height: 25vw;
+    }
+    
+    .cus-satisfaction .getStarted-btn {
+        width: 25vw; /* Adjust the button width */
+        height: 10vw; /* Adjust the button height */
+        border-radius: 2vw;
+        font-size: 3vw; /* Increase the font size for smaller screens */
+    }
+
+      @keyframes real-time{
+        0%{
+            top: -63%;
+            left: -50%;
+            transform: rotate(-30deg);
+        }
+        50%{
+            top: -63%;
+        left: -2%;
+        transform: rotate(-30deg);
+        }
+        100%{
+            top: -5%;
+            left: 13%;
+            transform: rotate(0deg); 
+        }
+    }
+    
+    @keyframes multi-language{
+        0%{
+            transform: rotate(-15deg);
+            top: -75%;
+            right: -50%;
+        }
+        50%{
+            top: -75%;
+            right: -12%;
+            transform: rotate(-15deg);
+        }
+        100%{
+            top: -14%;
+            right: 33%;
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes system-integration {
+        0%{
+            top: -33%;
+            right: -50%;
+        }
+        50%{
+            top: -33%;
+            right: -12%;
+        }
+        100%{
+            transform: rotate(0deg);
+            top: 18%;
+            right: 3%;
+        }
+    }
+    
+    @keyframes call-reception{
+        0%{
+            transform: rotate(30deg);
+            bottom: 81%;
+            left: -50%;
+        }
+        50%{
+            transform: rotate(30deg);
+            bottom: 81%;
+            left: -17%;
+        }
+        100%{
+            bottom: 25%;
+            left: 02%;
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes scalability{
+        0%{
+            transform: rotate(30deg);
+            bottom: 92%;
+            left: 200%;
+        }
+        50%{
+            bottom: 92%;
+            transform: rotate(30deg);
+            left: 79%;
+        }
+        100%{
+            bottom: -20%;
+            left: 43%;
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes detailed-reporting{
+        0%{
+            bottom: 87%;
+            transform: rotate(-30deg);
+            right: 200%;
+        }
+        50%{
+            bottom: 87%;
+            right: 82%;
+            transform: rotate(-30deg);
+        }
+        100%{
+            bottom: 12%;
+            right: 7.5%;
+            transform: rotate(0deg);
+        }
+    }
+  }
+
